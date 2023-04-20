@@ -15,3 +15,5 @@ I updated the weight tracking up through today. Needed to adjust some of the reg
 
 I then took a couple integrals to predict what the other two features would look like. I used `curve_fit` and `find_peak` to make an observation that my dad seems to go through 100 day cycles of active weight loss or weight gain. Very interesting.
 
+Actually looking at the acceleration graph, rationally it would make sense if it was a damped sine wave! because ultimately what we want is a steady downward slope, but when you first start dieting, you are full of motivation and you can do that super fast aggressive weight loss, but then you cool off and start getting in the groove and don't want to feel the hunger pangs, so you don't dip so hard into the peaks and troughs. This should continue until you reach a somewhat steady state (no accelaration). To achieve this, I think we need to add some sort of $e^x$ term. Look up damped sine waves and see if they fit!
+
